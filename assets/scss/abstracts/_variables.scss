@@ -1,12 +1,60 @@
 /* === Typography ===*/
 
+$font-family-heading: 'Playfair Display';
+$font-family-body: 'Montserrat';
+
 $font-size-base: 1rem; // 16px
+
+$font-size-h1: $font-size-base * 2.5; //40px
+$font-size-h2: $font-size-base * 2; //32px
+$font-size-h3: $font-size-base * 1.75; //28px
+$font-size-h4: $font-size-base * 1.25; //20px
+$font-size-h5: $font-size-base; //16px
+$font-size-h6: $font-size-base * 0.75; //12px
+$font-size-body-lg: $font-size-base * 1.25; //20px
+$font-size-body-reg: $font-size-base; //16px
+$font-size-body-sm: $font-size-base * 0.75; //12px
 
 $font-size-mobile-h1: $font-size-base * 2; //32px
 $font-size-mobile-h2: $font-size-base * 1.75; //28px
 $font-size-mobile-h3: $font-size-base * 1.25; //20px
 $font-size-mobile-h4: $font-size-base; //16px
 $font-size-mobile-h5: $font-size-base * 0.75; //12px
-$font-size-mobile-body-lg: $font-size-base * 1.25; //20px
-$font-size-mobile-body-reg: $font-size-base; //16px
-$font-size-mobile-body-sm: $font-size-base * 0.75; //12px;
+
+$line-height-h1: $font-size-base * 2.5; //40px
+$line-height-h2: $font-size-base * 2.25; //36px
+$line-height-h3: $font-size-base * 2; //32px
+$line-height-h4: $font-size-base * 1.25; //24px
+$line-height-h5: $font-size-base * 1.5; //24px
+$line-height-h6: $font-size-base * 0.75; //12px
+$line-height-body-lg: $font-size-base * 1.5; //24px
+$line-height-body-reg: $font-size-base * 1.25; //20px
+$line-height-body-sm: $font-size-base; //12px
+
+$line-height-mobile-h1: $font-size-base * 2.25; //36px
+$line-height-mobile-h2: $font-size-base * 2; //32px
+$line-height-mobile-h3: $font-size-base * 1.25; //24px
+$line-height-mobile-h4: $font-size-base * 1.5; //24px
+$line-height-mobile-h5: $font-size-base * 0.75; //12px
+
+$font-weight-extra-bold: 600;
+$font-weight-bold: 600;
+$font-weight-regular: 400;
+
+/* === Colors ===*/
+
+$color-amber: #d78b1a;
+$color-caramel: #845611;
+$color-coffee: #502c0b;
+$color-espresso: #231505;
+$color-cream: #f9f4f0;
+$color-foam: #ffffff;
+
+$colors: (
+	'amber': $color-amber,
+	'roast': $color-roast,
+	'coffee': $color-coffee,
+	'espresso': $color-espresso,
+	'cream': $color-cream,
+	'foam': $color-foam,
+);
