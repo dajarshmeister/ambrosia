@@ -1,0 +1,15 @@
+/* === Breakpoints === */
+
+@mixin md {
+	@media (min-width: $breakpoint-md) {
+		@content;
+	}
+}
+
+/* === Layout === */
+
+@mixin container {
+	max-width: $max-width-container;
+	margin: 0 auto;
+	padding: 0 1rem;
+}

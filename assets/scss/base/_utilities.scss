@@ -1,0 +1,10 @@
+/* === Layout === */
+
+.wrapper {
+	max-width: $wrapper;
+	margin: 0 auto;
+}
+
+.container {
+	@include container;
+}

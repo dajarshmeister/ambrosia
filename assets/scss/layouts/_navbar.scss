@@ -1,0 +1,44 @@
+.navbar {
+	background: $color-cream;
+	display: flex;
+	align-items: center;
+	&__container {
+		@include container;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		display: flex;
+		align-items: center;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		@include md {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&__brand {
+		max-width: 8rem;
+		margin-bottom: 1.5rem;
+		cursor: pointer;
+		@include md {
+			margin-bottom: 0;
+			transform: translateY(-6px);
+			max-width: 11.625rem;
+		}
+	}
+	&__list {
+		list-style: none;
+		display: flex;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 2.25rem;
+		}
+	}
+	&__link {
+		font-weight: $font-weight-bold;
+		font-size: $font-size-h4;
+		text-decoration: none;
+		color: $color-espresso;
+	}
+}
