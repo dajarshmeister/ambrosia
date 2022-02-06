@@ -3,7 +3,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Navbar />
-			<div className='wrapper'>{children}</div>
+			<main>{children}</main>
 		</>
 	);
 };
