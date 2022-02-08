@@ -1,9 +1,15 @@
 .btn {
 	border: none;
-	padding: 0.75rem;
+	padding: 0.75rem 1.5rem;
 	font-weight: bold;
 	font-size: $font-size-h5;
 	font-family: $font-family-heading;
 	border-radius: 0.25rem;
+	text-decoration: none;
+	display: inline-block;
 	cursor: pointer;
+	&-outline {
+		border: 1px solid $color-espresso;
+		color: $color-espresso;
+	}
 }

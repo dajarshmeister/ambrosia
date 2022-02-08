@@ -13,3 +13,10 @@
 	margin: 0 auto;
 	padding: 0 1rem;
 }
+
+@mixin section {
+	padding: 3rem 0;
+	@include md {
+		padding: 6.5rem 0;
+	}
+}

@@ -49,6 +49,7 @@ $color-coffee: #502c0b;
 $color-espresso: #231505;
 $color-cream: #fbf3e8;
 $color-foam: #ffffff;
+$color-grey: #686561;
 
 $colors: (
 	'amber': $color-amber,
@@ -60,10 +61,11 @@ $colors: (
 );
 
 /* === Breakpoints ===*/
-
+$breakpoint-sm: 0;
 $breakpoint-md: 768px;
 
 $breakpoints: (
+	'sm': $breakpoint-sm,
 	'md': $breakpoint-md,
 );
 
@@ -71,3 +73,7 @@ $breakpoints: (
 
 $wrapper: 90rem;
 $max-width-container: 71.25rem;
+
+/* === Grid Gap ===*/
+
+$grid-gap: 1.75rem;
