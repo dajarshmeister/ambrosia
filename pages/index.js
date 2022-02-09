@@ -13,6 +13,7 @@ const Home = ({ drinks }) => {
 				layout='responsive'
 				width='1440'
 				height='627'
+				alt='Coffee Banner'
 			/>
 			<FeaturedList drinks={drinks} />
 		</>
