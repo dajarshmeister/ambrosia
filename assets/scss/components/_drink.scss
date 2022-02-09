@@ -1,0 +1,18 @@
+.drink {
+	&__title {
+		margin-bottom: 0;
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.25rem;
+	}
+	&__price {
+		font-size: $font-size-body-lg;
+		font-family: $font-family-body;
+	}
+	&__thumb {
+		margin-bottom: 1rem;
+	}
+}

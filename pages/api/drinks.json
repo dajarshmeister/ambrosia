@@ -1,0 +1,28 @@
+{
+    "drinks": [
+        {
+            "title": "Cold Brew",
+            "price": "6",
+            "snippet": "Lorem ipsum dolor sit amet.",
+            "id": "1"
+        },
+        {
+            "title": "Espresso",
+            "price": "10",
+            "snippet": "Lorem ipsum dolor sit amet.",
+            "id": "2"
+        },
+        {
+            "title": "Latte",
+            "price": "2",
+            "snippet": "Lorem ipsum dolor sit amet.",
+            "id": "3"
+        },
+        {
+            "title": "Drip Coffee",
+            "price": "8",
+            "snippet": "Lorem ipsum dolor sit amet.",
+            "id": "4"
+        }
+    ]
+}
