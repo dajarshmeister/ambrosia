@@ -2,6 +2,7 @@ import Hero from '../components/Hero';
 import Tout from '../components/Tout';
 import Image from 'next/image';
 import FeaturedList from '../components/FeaturedList';
+import Menu from '../components/Menu';
 
 const Home = ({ drinks }) => {
 	return (
@@ -16,6 +17,7 @@ const Home = ({ drinks }) => {
 				alt='Coffee Banner'
 			/>
 			<FeaturedList drinks={drinks} />
+			<Menu drinks={drinks} />
 		</>
 	);
 };

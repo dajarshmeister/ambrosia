@@ -2,7 +2,7 @@ import FeaturedDrink from './FeaturedDrink';
 
 const FeaturedList = ({ drinks }) => {
 	return (
-		<div className='section'>
+		<section className='section bg-white'>
 			<div className='container'>
 				<div className='grid-md-12'>
 					<div className='col-start-md-3 col-end-md-11'>
@@ -21,7 +21,7 @@ const FeaturedList = ({ drinks }) => {
 					})}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

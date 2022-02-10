@@ -1,0 +1,32 @@
+$spacing-utilities: (
+	'margin-top': (
+		'prefix': 'mt',
+		'values': $spacers,
+	),
+	'margin-bottom': (
+		'prefix': 'mb',
+		'values': $spacers,
+	),
+	'margin-right': (
+		'prefix': 'mr',
+		'values': $spacers,
+	),
+	'margin-left': (
+		'prefix': 'ml',
+		'values': $spacers,
+	),
+	'padding-top': (
+		'prefix': 'pt',
+		'values': $spacers,
+	),
+	'padding-bottom': (
+		'prefix': 'pb',
+		'values': $spacers,
+	),
+	'padding': (
+		'prefix': 'p',
+		'values': $spacers,
+	),
+);
+
+@include responsive($spacing-utilities);

@@ -20,3 +20,34 @@
 		padding: 6.5rem 0;
 	}
 }
+
+/* === Generate Responsive Utilities === */
+
+@mixin responsive($list) {
+	@each $breakpoint, $size in $breakpoints {
+		@if ($breakpoint == 'sm') {
+			@each $property, $map in $list {
+				$prefix: map-get($map, 'prefix');
+				$values: map-get($map, 'values');
+				@each $k, $v in $values {
+					.#{$prefix}-#{$k} {
+						#{$property}: $v;
+					}
+				}
+			}
+		}
+		@if ($breakpoint != 'sm') {
+			@media (min-width: $size) {
+				@each $property, $map in $list {
+					$prefix: map-get($map, 'prefix');
+					$values: map-get($map, 'values');
+					@each $k, $v in $values {
+						.#{$prefix}-#{$breakpoint}-#{$k} {
+							#{$property}: $v;
+						}
+					}
+				}
+			}
+		}
+	}
+}

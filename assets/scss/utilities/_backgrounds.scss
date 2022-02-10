@@ -1,0 +1,33 @@
+$background-utilities: (
+	'background-color': (
+		'prefix': 'bg',
+		'values': (
+			'white': white,
+		),
+	),
+);
+
+@each $breakpoint, $size in $breakpoints {
+	@if ($breakpoint == 'sm') {
+		@each $property, $map in $background-utilities {
+			$prefix: map-get($map, 'prefix');
+			$values: map-get($map, 'values');
+			@each $k, $v in $values {
+				.#{$prefix}-#{$k} {
+					#{$property}: $v;
+				}
+				section.#{$prefix}-#{$k} + section.#{$prefix}-#{$k} {
+					padding-top: 0;
+					#{$property}: $v;
+				}
+				// .#{$prefix}-#{$k}-light {
+				// 	#{$property}: mix(white, $v, 50%);
+				// }
+				// section.#{$prefix}-#{$k}-light + section.#{$prefix}-#{$k}-light {
+				// 	padding-top: 0;
+				// 	#{$property}: mix(white, $v, 50%);
+				// }
+			}
+		}
+	}
+}

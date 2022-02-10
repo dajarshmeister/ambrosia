@@ -1,0 +1,57 @@
+@each $key, $val in $spacers {
+	.last-child-mb-#{$key} {
+		&:not(:last-child) {
+			margin-bottom: $val;
+		}
+	}
+}
+
+$general-utilities: (
+	'display': (
+		'prefix': 'd',
+		'values': (
+			'none': none,
+			'block': block,
+			'flex': flex,
+		),
+	),
+	'align-items': (
+		'prefix': 'ai',
+		'values': (
+			'center': center,
+		),
+	),
+	'overflow-x': (
+		'prefix': 'overflow',
+		'values': (
+			'auto': auto,
+		),
+	),
+	'text-align': (
+		'prefix': 'text',
+		'values': (
+			'center': center,
+		),
+	),
+	'z-index': (
+		'prefix': 'z',
+		'values': (
+			'1': 1,
+			'2': 2,
+		),
+	),
+	'height': (
+		'prefix': 'h',
+		'values': (
+			'100': 100%,
+		),
+	),
+	'object-fit': (
+		'prefix': 'of',
+		'values': (
+			'cover': cover,
+		),
+	),
+);
+
+@include responsive($general-utilities);
