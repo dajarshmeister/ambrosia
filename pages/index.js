@@ -4,7 +4,7 @@ import Image from 'next/image';
 import FeaturedList from '../components/FeaturedList';
 import Menu from '../components/Menu';
 
-const Home = ({ drinks }) => {
+const Home = ({ products }) => {
 	return (
 		<>
 			<Hero />
@@ -16,8 +16,8 @@ const Home = ({ drinks }) => {
 				height='627'
 				alt='Coffee Banner'
 			/>
-			<FeaturedList drinks={drinks} />
-			<Menu drinks={drinks} />
+			<FeaturedList products={products} />
+			<Menu products={products} />
 		</>
 	);
 };
@@ -25,9 +25,10 @@ const Home = ({ drinks }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-	const res = await fetch('http://localhost:3000/api/featured-drinks');
-	const drinks = await res.json();
+	const res = await fetch('http://localhost:3000/api/products');
+	const products = await res.json();
+	const 
 	return {
-		props: { drinks },
+		props: { products },
 	};
 };

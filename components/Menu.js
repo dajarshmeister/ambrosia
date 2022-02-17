@@ -1,4 +1,14 @@
-const Menu = ({ drinks }) => {
+const Menu = ({ products }) => {
+	console.log(products);
+
+	const options = [
+		...new Set(
+			products.map(product => {
+				return product.type;
+			})
+		),
+	];
+
 	return (
 		<section className='section bg-white'>
 			<div className='container'>
@@ -13,15 +23,15 @@ const Menu = ({ drinks }) => {
 					</div>
 				</div>
 				<div className='grid-md-2'>
-					{drinks.map(drink => {
+					{products.map(product => {
 						return (
-							<div className='grid-md-2'>
+							<div className='grid-md-2' key={product.id}>
 								<img
 									src='https://via.placeholder.com/264x202'
 									className='fluid'
 								/>
 								<div className='mt-1'>
-									<h3 className='mb-2'>{drink.title}</h3>
+									<h3 className='mb-2'>{product.title}</h3>
 									<div>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 										Scelerisque ut libero dignissim enim vitae, ullamcorper quis
