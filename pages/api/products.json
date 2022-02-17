@@ -1,28 +1,39 @@
 {
-    "drinks": [
+    "products": [
         {
             "title": "Cold Brew",
             "price": "6",
             "snippet": "Lorem ipsum dolor sit amet.",
-            "id": "1"
+            "id": "1",
+            "type": "Breakfast"
         },
         {
             "title": "Espresso",
             "price": "10",
             "snippet": "Lorem ipsum dolor sit amet.",
-            "id": "2"
+            "id": "2",
+            "type": "Specials"
         },
         {
             "title": "Latte",
             "price": "2",
             "snippet": "Lorem ipsum dolor sit amet.",
-            "id": "3"
+            "id": "3",
+            "type": "Lunch"
         },
         {
             "title": "Drip Coffee",
             "price": "8",
             "snippet": "Lorem ipsum dolor sit amet.",
-            "id": "4"
+            "id": "4",
+            "type": "Drinks"
+        },
+        {
+            "title": "Vanilla Latte",
+            "price": "8",
+            "snippet": "Lorem ipsum dolor sit amet.",
+            "id": "5",
+            "type": "Drinks"
         }
     ]
 }

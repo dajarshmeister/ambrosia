@@ -1,6 +1,6 @@
 import FeaturedDrink from './FeaturedDrink';
 
-const FeaturedList = ({ drinks }) => {
+const FeaturedList = ({ products }) => {
 	return (
 		<section className='section bg-white'>
 			<div className='container'>
@@ -16,8 +16,8 @@ const FeaturedList = ({ drinks }) => {
 					</div>
 				</div>
 				<div className='grid-md-4'>
-					{drinks.map(drink => {
-						return <FeaturedDrink key={drink.id} drink={drink} />;
+					{products.slice(0, 4).map(product => {
+						return <FeaturedDrink key={product.id} product={product} />;
 					})}
 				</div>
 			</div>

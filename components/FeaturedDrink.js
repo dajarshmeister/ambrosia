@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-const FeaturedDrink = ({ drink }) => {
-	const { title, price, snippet } = drink;
+const FeaturedDrink = ({ product }) => {
+	const { title, price, snippet } = product;
 	return (
 		<div className='drink'>
 			<div className='drink__thumb'>
