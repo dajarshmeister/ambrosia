@@ -1,9 +1,9 @@
 {
     "products": [
         {
-            "title": "Cold Brew",
-            "price": "6",
-            "snippet": "Lorem ipsum dolor sit amet.",
+            "title": "Blandit et",
+            "price": "$6",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
             "id": "1",
             "type": "Breakfast"
         },

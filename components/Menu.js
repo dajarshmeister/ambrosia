@@ -8,7 +8,6 @@ const Menu = ({ products }) => {
 			})
 		),
 	];
-	console.log(options);
 
 	return (
 		<section className='section bg-white'>
