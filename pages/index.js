@@ -3,8 +3,9 @@ import Tout from '../components/Tout';
 import Image from 'next/image';
 import FeaturedList from '../components/FeaturedList';
 import Menu from '../components/Menu';
+import db from '../Utils/db';
 
-const Home = ({ products, featured }) => {
+const Home = ({ featuredDrink }) => {
 	return (
 		<>
 			<Hero />
@@ -16,8 +17,8 @@ const Home = ({ products, featured }) => {
 				height='627'
 				alt='Coffee Banner'
 			/>
-			<FeaturedList products={featured} />
-			<Menu products={products} />
+			<FeaturedList data={featuredDrink} />
+			{/* <Menu products={products} /> */}
 		</>
 	);
 };
@@ -25,13 +26,33 @@ const Home = ({ products, featured }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-	const productsRes = await fetch('http://localhost:3000/api/drinks');
-	const products = await productsRes.json();
-	const featuredRes = await fetch(
-		'http://localhost:3000/api/drinks?featured=true'
+	const { featuredDrink } = await db.request(
+		`
+		{
+			featuredDrink(where: {id: "ckzwyrmegccjb0c2601epvluo"}) {
+			  title {
+				  html
+			  }
+			  description
+			  drinks {
+				title 
+				description
+				price
+				id
+				slug
+				image {
+					alt
+					url
+				  }
+			  }
+			}
+		  }
+		`
 	);
-	const featured = await featuredRes.json();
+
 	return {
-		props: { products, featured },
+		props: {
+			featuredDrink,
+		},
 	};
 };
