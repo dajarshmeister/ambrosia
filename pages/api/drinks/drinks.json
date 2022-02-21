@@ -1,0 +1,60 @@
+{
+    "drinks": [
+        {
+            "title": "Blandit et",
+            "price": "6",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "true",
+            "id": "1"
+        },
+        {
+            "title": "Adipiscing",
+            "price": "10",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "true",
+            "id": "2"
+        },
+        {
+            "title": "Vestibulum",
+            "price": "7",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "true",
+            "id": "3"
+        },
+        {
+            "title": "Aliquet risus",
+            "price": "6",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "true",
+            "id": "4"
+        },
+        {
+            "title": "Blandit et",
+            "price": "6",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "false",
+            "id": "5"
+        },
+        {
+            "title": "Adipiscing",
+            "price": "10",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "false",
+            "id": "6"
+        },
+        {
+            "title": "Vestibulum",
+            "price": "7",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "false",
+            "id": "7"
+        },
+        {
+            "title": "Aliquet risus",
+            "price": "6",
+            "snippet": "Ultrices aenean tellus dolor sed dui orci nibh eget.",
+            "featured": "false",
+            "id": "8"
+        }
+    ]
+}

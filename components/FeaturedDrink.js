@@ -4,7 +4,7 @@ import Link from 'next/link';
 const FeaturedDrink = ({ product }) => {
 	const { title, price, snippet, id } = product;
 	return (
-		<Link href={`/featured/${id}`}>
+		<Link href={`/drinks/${id}`}>
 			<a className='drink'>
 				<div className='drink__thumb'>
 					<Image

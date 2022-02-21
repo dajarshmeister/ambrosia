@@ -13,7 +13,7 @@ const FeaturedDrink = ({ drink }) => {
 export default FeaturedDrink;
 
 export const getStaticPaths = async () => {
-	const response = await fetch('http://localhost:3000/api/featured');
+	const response = await fetch('http://localhost:3000/api/drinks');
 	const data = await response.json();
 	const paths = data.map(item => {
 		return { params: { id: item.id.toString() } };
@@ -25,7 +25,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { id } }) => {
-	const response = await fetch(`http://localhost:3000/api/featured/${id}`);
+	const response = await fetch(`http://localhost:3000/api/drinks/${id}`);
 	const data = await response.json();
 	return {
 		props: {

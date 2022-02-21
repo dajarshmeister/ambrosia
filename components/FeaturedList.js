@@ -16,7 +16,7 @@ const FeaturedList = ({ products }) => {
 					</div>
 				</div>
 				<div className='grid-md-4'>
-					{featured.map(product => {
+					{products.map(product => {
 						return <FeaturedDrink key={product.id} product={product} />;
 					})}
 				</div>
