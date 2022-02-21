@@ -11,10 +11,10 @@ const FeaturedList = ({ data }) => {
 			<div className='container'>
 				<div className='grid-md-12'>
 					<div className='col-start-md-3 col-end-md-11'>
-						<h2
+						<div
 							className='text-center'
 							dangerouslySetInnerHTML={{ __html: title }}
-						></h2>
+						></div>
 						<div className='lead text-center'>{description}</div>
 					</div>
 				</div>
