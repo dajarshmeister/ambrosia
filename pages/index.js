@@ -25,10 +25,11 @@ const Home = ({ products, featured }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-	const productsRes = await fetch('http://localhost:3000/api/products');
+	const productsRes = await fetch('http://localhost:3000/api/drinks');
 	const products = await productsRes.json();
-
-	const featuredRes = await fetch('http://localhost:3000/api/featured');
+	const featuredRes = await fetch(
+		'http://localhost:3000/api/drinks?featured=true'
+	);
 	const featured = await featuredRes.json();
 	return {
 		props: { products, featured },
