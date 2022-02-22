@@ -1,5 +1,5 @@
 .navbar {
-	background: $color-cream;
+	background: $color-foam;
 	display: flex;
 	align-items: center;
 	&__container {
@@ -36,9 +36,12 @@
 		}
 	}
 	&__link {
-		font-weight: $font-weight-bold;
+		font-weight: $font-weight-normal;
 		font-size: $font-size-h4;
 		text-decoration: none;
 		color: $color-espresso;
+		&:hover {
+			color: $color-amber;
+		}
 	}
 }

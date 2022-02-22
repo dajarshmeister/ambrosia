@@ -3,6 +3,7 @@ $background-utilities: (
 		'prefix': 'bg',
 		'values': (
 			'white': white,
+			'dulce': $color-dulce,
 		),
 	),
 );
@@ -20,13 +21,6 @@ $background-utilities: (
 					padding-top: 0;
 					#{$property}: $v;
 				}
-				// .#{$prefix}-#{$k}-light {
-				// 	#{$property}: mix(white, $v, 50%);
-				// }
-				// section.#{$prefix}-#{$k}-light + section.#{$prefix}-#{$k}-light {
-				// 	padding-top: 0;
-				// 	#{$property}: mix(white, $v, 50%);
-				// }
 			}
 		}
 	}

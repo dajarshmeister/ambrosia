@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
 h2 {
 	font-size: $font-size-h2;
@@ -21,7 +21,7 @@ h3 {
 	line-height: $line-height-body-lg;
 	color: $color-grey;
 	font-family: $font-family-body;
-	font-weight: $font-weight-regular;
+	font-weight: $font-weight-normal;
 	margin-bottom: 3.375rem;
 }
 

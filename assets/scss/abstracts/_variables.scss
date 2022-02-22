@@ -41,7 +41,7 @@ $line-height-mobile-h5: $font-size-base * 0.75; //12px
 
 $font-weight-extra-bold: 600;
 $font-weight-bold: 600;
-$font-weight-regular: 400;
+$font-weight-normal: 400;
 
 /* === Colors ===*/
 
@@ -52,6 +52,7 @@ $color-espresso: #231505;
 $color-cream: #fbf3e8;
 $color-foam: #ffffff;
 $color-grey: #686561;
+$color-dulce: #eed7bd;
 
 $colors: (
 	'amber': $color-amber,

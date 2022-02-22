@@ -1,15 +1,24 @@
 .btn {
 	border: none;
-	padding: 0.75rem 1.5rem;
+	padding: 1rem 1.5rem;
 	font-weight: bold;
 	font-size: $font-size-h5;
-	font-family: $font-family-heading;
+	font-family: $font-family-body;
 	border-radius: 0.25rem;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		box-shadow: 0px 10px 10px rgba($color-espresso, 0.1);
+		transform: translateY(-0.25rem);
+	}
 	&-outline {
 		border: 1px solid $color-espresso;
 		color: $color-espresso;
+	}
+	&-primary {
+		background: $color-amber;
+		color: $color-foam;
 	}
 }

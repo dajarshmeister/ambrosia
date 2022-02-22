@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Tout = () => {
 	return (
 		<section className='section'>
@@ -10,9 +12,9 @@ const Tout = () => {
 						nascetur ac magna consectetur diam amet. Sit tellus eu felis
 						vehicula sed rhoncus nibh nunc consequat.
 					</div>
-					<a href='!#' className='btn btn-outline'>
-						Learn More
-					</a>
+					<Link href='our-story'>
+						<a className='btn btn-outline'>Learn More</a>
+					</Link>
 				</div>
 			</div>
 		</section>
